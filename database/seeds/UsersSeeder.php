@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 
-class UsersTableSeeder extends Seeder
+class UsersSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -27,10 +27,11 @@ class UsersTableSeeder extends Seeder
                     "is_deleted" => false,
                     "created_at"    => now(),
                     "updated_at"    => now(),
+                
                 ],
             ]);
         });
         \Schema::enableForeignKeyConstraints();
     }
-    }
+    
 }
